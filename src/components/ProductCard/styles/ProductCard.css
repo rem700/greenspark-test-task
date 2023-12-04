@@ -1,0 +1,140 @@
+.product-card {
+    width: 221px;
+}
+
+.product-card-top {
+    border-radius: 5.95px;
+    padding: 10px;
+    display: flex;
+    column-gap: 6px;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+img.product-card-logo {
+    width: 39.7px;
+    height: 45.41px;
+}
+
+.product-card-text {
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.product-card-text-green {
+    color: #3B755F;
+}
+
+p.product-card-text-action {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+}
+
+p.product-card-text-amount {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.product-card-label-text {
+    color: #3B755F;
+    font-size: 14;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.product-card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.checkbox-wrapper,
+.toggle-wrapper{
+    position: relative;
+}
+
+input[type="checkbox"].product-card-checkbox {
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s ease;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+
+span.checkbox {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 0.15em;
+    border: 2px solid #000;
+}
+
+input[type="checkbox"].product-card-checkbox:checked + span.checkbox {
+    background: url('../../../img/checkbox/selected.svg') 0 0/cover;
+    border: none;
+}
+
+.checkbox-wrapper:hover::before {
+    content: '';
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: #3B755F; 
+    opacity: 0.2;
+    z-index: 1; 
+}
+
+input[type="checkbox"].product-card-toggle {
+    width: 42px;
+    height: 26px;
+    transition: all 0.3s ease;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+
+span.toggle {
+    position: absolute;
+    width: 52px;
+    height: 32px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url('../../../img/toggle/Toggle.svg') right center/42px auto  no-repeat;
+}
+
+input[type="checkbox"].product-card-toggle:checked + span.toggle {
+    background: url('../../../img/toggle/Toggle_selected.svg') right center/42px auto  no-repeat;
+}
+
+input[type="checkbox"].product-card-toggle:not(:checked):hover + span.toggle { 
+    background: url('../../../img/toggle/Toggle_hover.svg') 6px center/46.8999px auto no-repeat;
+}
+
+@media (max-width: 768px) {
+    .wrapper-canvas{
+        margin-top: 48px;
+        width: 100%;
+        
+    }
+  }

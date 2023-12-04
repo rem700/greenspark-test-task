@@ -1,0 +1,18 @@
+.palette-selector-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.palette-selector-colors-container {
+    display: flex;
+}
+
+button.palette-selector-button {
+    width: 16px;
+    height: 16px;
+    margin-left: 2px;
+    transition: border-color 0.3s ease;
+    border: 2px solid transparent;
+    opacity: 1;
+}
